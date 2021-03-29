@@ -28,7 +28,7 @@
         <div class="row">
           <div class="banner-info text-center wow fadeIn delay-05s">
           <!--  <h1 class="bnr-title"></h1> -->
-            <h2 class="bnr-sub-title">Dobrodosli</h2>
+            <h2 class="bnr-sub-title">Dobrodošli</h2>
             <p class="bnr-para">Tvoj dom otkriva ko si i šta voliš uz dekoraciju i ukrasne dodatke za dom poput sveća, postera, biljaka, satova, ogledala.<br> Pogledaj naš asortiman i pronađi se.<br></p>
 
             <div class="overlay-detail">

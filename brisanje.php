@@ -52,23 +52,23 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/custom.js"></script>
   <script>
-      function vratiOdecu(){
+      function vratiDekoraciju(){
         $.ajax({
           url: "kontroler.php",
-          data: "operacija=odeca",
+          data: "operacija=dekor",
           success: function(data){
             var text='';
             $.each(JSON.parse(data),function(i,val){
-              text+='<option value="'+val.odecaID+'">'+val.naziv+'</option>';
+              text+='<option value="'+val.dekorID+'">'+val.naziv+'</option>';
             });
-            $("#odeca").html(text);
+            $("#dekor").html(text);
           }
         });
       }
   </script>
 
   <script>
-  vratiOdecu();
+  vratiDekoraciju();
   </script>
 </body>
 </html>

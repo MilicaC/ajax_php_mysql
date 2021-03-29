@@ -109,7 +109,7 @@ if(isset($_GET['operacija']) && $_GET['operacija']=='pretragaSortiranje'){
 
   $pretraga = $_GET['pretraga'];
   $sortiranje = $_GET['sortiranje'];
-  $sql = "SELECT * FROM dekort d join boja b on d.bojaID=b.bojaID join materijal m on o.materijalID=m.materijalID where o.naziv LIKE '%".$pretraga."%' order by cena ".$sortiranje;
+  $sql = "SELECT * FROM dekort d join boja b on d.bojaID=b.bojaID join materijal m on d.materijalID=m.materijalID where d.naziv LIKE '%".$pretraga."%' order by cena ".$sortiranje;
   //echo($sql);
   $rezultat = $konekcija->query($sql);
 
@@ -126,7 +126,7 @@ if(isset($_GET['operacija']) && $_GET['operacija']=='pretragaSortiranje'){
     $dekort = new Dekort();
 
 
-    $dekort->setDekorID($red['odecaID']);
+    $dekort->setDekorID($red['dekorID']);
     $dekort->setNaziv($red['naziv']);
     $dekort->setVelicina($red['velicina']);
     $dekort->setCena($red['cena']);
